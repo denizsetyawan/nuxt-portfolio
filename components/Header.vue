@@ -1,8 +1,8 @@
 <template>
   <v-app-bar app color="" flat>
 
-    <v-btn v-for="link in links" :key="link" text>
-      {{ link }}
+    <v-btn v-for="link in links" :key="link.index" text :to="link.link" nuxt>
+      {{ link.name }}
     </v-btn>
 
     <v-spacer></v-spacer>
@@ -16,12 +16,15 @@
   export default {
     data: () => ({
       darkMode: false,
-      links: [
-        'dnz',
-        'works',
-        // 'Profile',
-        // 'Updates',
-      ]
+      links: [{
+          link: '/',
+          name: 'home'
+        },
+        {
+          link: 'works',
+          name: 'works'
+        }
+      ],
     }),
     methods: {
       toggleDarkMode: function () {

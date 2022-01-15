@@ -26,6 +26,10 @@
         {
           link: 'https://instagram.com/dnzsetyawan/',
           mdi: 'mdi-instagram'
+        },
+        {
+          link: 'mailto:hello@dnz.my.id',
+          mdi: 'mdi-email'
         }
       ],
     }),
