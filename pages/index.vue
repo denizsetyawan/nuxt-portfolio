@@ -3,104 +3,48 @@
     <v-container>
       <v-row>
         <!-- First Column -->
-        <v-col cols="12" sm="2">
+        <v-col cols="12" sm="3">
         </v-col>
 
         <!-- Main Column -->
-        <v-col cols="12" sm="8">
+        <v-col cols="12" sm="6">
           <v-sheet class="my-3" rounded="lg">
-            <v-row>
+            <!-- Hi -->
+            <v-alert color="blue-grey lighten-1" border="left" elevation="5" colored-border icon="mdi-hand-wave" shaped>
+              Hello, I'm a developer based in Indonesia!
+            </v-alert>
 
-              <!-- Eco Greentech Abadi -->
-              <v-card class="mx-auto my-3" max-width="344" shaped>
-                <v-list-item three-line>
-                  <v-list-item-content>
-                    <div class="body-2 mb-3 blue-grey--text lighten-1">
-                      laravel boostrap
-                    </div>
-                    <div class="mb-2">
-                      Eco Greentech Abadi
-                    </div>
-                    <div class="caption">it's a company profile website for PT Eco Greentech Abadi, I created it when
-                      I was doing the internship program at PT Eco Greentech Abadi.</div>
-                  </v-list-item-content>
+            <!-- Profile -->
+            <section class="profile my-10">
+              <v-row>
+                <v-col cols="12" sm="9">
+                <div class="text-h3 mx-auto">Deniz Setyawan</div>
+                <p class="text-subtitle-1 ml-2">Developer</p>
+                </v-col>
+                <v-col cols="12" sm="3" class="text-center">
+                <v-avatar color="primary mx-auto" size="80">
+                  <img src="https://avatars.githubusercontent.com/u/48708822?v=4" alt="deniz setyawan">
+                </v-avatar>
+                </v-col>
+              </v-row>
+            </section>
 
-                  <v-avatar tile size="80">
-                    <v-img
-                      src="https://ik.imagekit.io/xdt41sehmiw/dnz_my_id/eco-greentech_zUXvlFfBz.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642204362396">
-                    </v-img>
-                  </v-avatar>
-                </v-list-item>
+            <!-- About -->
+            <section class="about mt-6">
+              <div class="text-h6">About</div>
+              <p style="text-align: justify; text-indent: 0.5in;">I am a developer and a part time freelancer based in
+                Yogyakarta. beside that i also sell some digital products. I like
+                to learn new things especially about technology.</p>
+              <div class="text-center">
+                <v-btn elevation="4" color="blue-grey lighten-1" small justify="center" to="works" nuxt>Portfolio ></v-btn>
+              </div>
+            </section>
 
-                <v-card-actions>
-                  <v-tooltip bottom>
-                    <template v-slot:activator="{ on, attrs }">
-                      <v-btn outlined icon text v-bind="attrs" v-on="on" class="mr-3">
-                        <i class="fas fa-globe fa-lg"></i>
-                      </v-btn>
-                    </template>
-                    <span>Live</span>
-                  </v-tooltip>
-
-                  <v-tooltip bottom>
-                    <template v-slot:activator="{ on, attrs }">
-                      <v-btn outlined icon text v-bind="attrs" v-on="on" class="mr-3">
-                        <i class="fab fa-github fa-lg"></i>
-                      </v-btn>
-                    </template>
-                    <span>Github</span>
-                  </v-tooltip>
-                </v-card-actions>
-              </v-card>
-
-              <!-- Bantenese -->
-              <v-card class="mx-auto my-3" max-width="344" shaped>
-                <v-list-item three-line>
-                  <v-list-item-content>
-                    <div class="body-2 mb-3 blue-grey--text lighten-1">
-                      laravel boostrap rajaongkir
-                    </div>
-                    <div class="mb-2">
-                      Bantenese Furniture
-                    </div>
-                    <div class="caption">it's an online shop / POS (Point of Sales) website, This project intends to
-                      manage products, categories, and create sales reports.</div>
-                  </v-list-item-content>
-
-                  <v-avatar tile size="80">
-                    <v-img
-                      src="https://ik.imagekit.io/xdt41sehmiw/dnz_my_id/bantenese_jRHAX3uhioh.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642207621647">
-                    </v-img>
-                  </v-avatar>
-                </v-list-item>
-
-                <v-card-actions>
-                  <v-tooltip bottom>
-                    <template v-slot:activator="{ on, attrs }">
-                      <v-btn outlined icon text v-bind="attrs" v-on="on" class="mr-3">
-                        <i class="fas fa-globe fa-lg"></i>
-                      </v-btn>
-                    </template>
-                    <span>Live</span>
-                  </v-tooltip>
-
-                  <v-tooltip bottom>
-                    <template v-slot:activator="{ on, attrs }">
-                      <v-btn href="https://github.com" target="_blank" icon outlined text v-bind="attrs" v-on="on"
-                        class="mr-3">
-                        <i class="fab fa-github fa-lg"></i>
-                      </v-btn>
-                    </template>
-                    <span>Github</span>
-                  </v-tooltip>
-                </v-card-actions>
-              </v-card>
-            </v-row>
           </v-sheet>
         </v-col>
 
         <!-- Third Column -->
-        <v-col cols="12" sm="2">
+        <v-col cols="12" sm="3">
         </v-col>
 
       </v-row>
@@ -109,7 +53,13 @@
 </template>
 <script>
   export default {
-
+    data: () => ({
+      messages: [{
+        avatar: 'https://avatars0.githubusercontent.com/u/9064066?v=4&s=460',
+        name: 'John Leider',
+        title: 'Welcome to Vuetify!',
+      }]
+    })
   }
 
 </script>

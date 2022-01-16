@@ -34,7 +34,7 @@
     },
     computed: {
       switchLabel: function () {
-        return this.darkMode ? '☀️' : '🌙';
+        return this.darkMode ? '🌙' : '☀️';
       }
     }
   }
