@@ -16,7 +16,7 @@
                 <v-list-item three-line>
                   <v-list-item-content>
                     <div class="body-2 mb-3 blue-grey--text lighten-1">
-                      laravel boostrap
+                      laravel bootstrap
                     </div>
                     <div class="mb-2">
                       Eco Greentech Abadi
@@ -58,7 +58,7 @@
                 <v-list-item three-line>
                   <v-list-item-content>
                     <div class="body-2 mb-3 blue-grey--text lighten-1">
-                      laravel boostrap rajaongkir
+                      laravel bootstrap rajaongkir
                     </div>
                     <div class="mb-2">
                       Bantenese Furniture
