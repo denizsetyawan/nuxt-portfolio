@@ -36,7 +36,7 @@
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
                       <v-btn outlined icon text v-bind="attrs" v-on="on" class="mr-3">
-                        <i class="fas fa-globe fa-lg"></i>
+                        <v-icon>mdi-web</v-icon>
                       </v-btn>
                     </template>
                     <span>Live</span>
@@ -45,7 +45,7 @@
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
                       <v-btn outlined icon text v-bind="attrs" v-on="on" class="mr-3">
-                        <i class="fab fa-github fa-lg"></i>
+                        <v-icon>mdi-github</v-icon>
                       </v-btn>
                     </template>
                     <span>Github</span>
@@ -78,7 +78,7 @@
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
                       <v-btn outlined icon text v-bind="attrs" v-on="on" class="mr-3">
-                        <i class="fas fa-globe fa-lg"></i>
+                        <v-icon>mdi-web</v-icon>
                       </v-btn>
                     </template>
                     <span>Live</span>
@@ -88,7 +88,7 @@
                     <template v-slot:activator="{ on, attrs }">
                       <v-btn href="https://github.com" target="_blank" icon outlined text v-bind="attrs" v-on="on"
                         class="mr-3">
-                        <i class="fab fa-github fa-lg"></i>
+                        <v-icon>mdi-github</v-icon>
                       </v-btn>
                     </template>
                     <span>Github</span>
