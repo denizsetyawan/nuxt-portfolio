@@ -22,7 +22,7 @@
                 <p class="text-subtitle-1 ml-2">Developer</p>
                 </v-col>
                 <v-col cols="12" sm="3" class="text-center">
-                <v-avatar color="primary mx-auto" size="80">
+                <v-avatar color="blue-grey lighten-1 mx-auto" size="80">
                   <img src="https://avatars.githubusercontent.com/u/48708822?v=4" alt="deniz setyawan">
                 </v-avatar>
                 </v-col>
@@ -53,13 +53,7 @@
 </template>
 <script>
   export default {
-    data: () => ({
-      messages: [{
-        avatar: 'https://avatars0.githubusercontent.com/u/9064066?v=4&s=460',
-        name: 'John Leider',
-        title: 'Welcome to Vuetify!',
-      }]
-    })
+    
   }
 
 </script>

@@ -16,7 +16,7 @@
                 <v-list-item three-line>
                   <v-list-item-content>
                     <div class="body-2 mb-3 blue-grey--text lighten-1">
-                      laravel bootstrap
+                      laravel bootstrap datatables
                     </div>
                     <div class="mb-2">
                       Eco Greentech Abadi
@@ -35,21 +35,21 @@
                 <v-card-actions>
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
-                      <v-btn outlined icon text v-bind="attrs" v-on="on" class="mr-3">
+                      <v-btn outlined icon text v-bind="attrs" v-on="on" class="mr-3" href="https://ecogreentech.herokuapp.com" target="_blank">
                         <v-icon>mdi-web</v-icon>
                       </v-btn>
                     </template>
                     <span>Live</span>
                   </v-tooltip>
 
-                  <v-tooltip bottom>
+                  <!-- <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
                       <v-btn outlined icon text v-bind="attrs" v-on="on" class="mr-3">
                         <v-icon>mdi-github</v-icon>
                       </v-btn>
                     </template>
                     <span>Github</span>
-                  </v-tooltip>
+                  </v-tooltip> -->
                 </v-card-actions>
               </v-card>
 
@@ -77,14 +77,14 @@
                 <v-card-actions>
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
-                      <v-btn outlined icon text v-bind="attrs" v-on="on" class="mr-3">
+                      <v-btn outlined icon text v-bind="attrs" v-on="on" class="mr-3" href="https://bantenese.herokuapp.com" target="_blank">
                         <v-icon>mdi-web</v-icon>
                       </v-btn>
                     </template>
                     <span>Live</span>
                   </v-tooltip>
 
-                  <v-tooltip bottom>
+                  <!-- <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
                       <v-btn href="https://github.com" target="_blank" icon outlined text v-bind="attrs" v-on="on"
                         class="mr-3">
@@ -92,7 +92,49 @@
                       </v-btn>
                     </template>
                     <span>Github</span>
+                  </v-tooltip> -->
+                </v-card-actions>
+              </v-card>
+
+              <!-- Kamerapedia -->
+              <v-card class="mx-auto my-3" max-width="344" shaped>
+                <v-list-item three-line>
+                  <v-list-item-content>
+                    <div class="body-2 mb-3 blue-grey--text lighten-1">
+                      laravel bootstrap
+                    </div>
+                    <div class="mb-2">
+                      Kamerapedia
+                    </div>
+                    <div class="caption">it's a website for camera rental in the yogyakarta area.</div>
+                  </v-list-item-content>
+
+                  <v-avatar tile size="80">
+                    <v-img
+                      src="https://ik.imagekit.io/xdt41sehmiw/dnz_my_id/kamerapedia_boNf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642392702182">
+                    </v-img>
+                  </v-avatar>
+                </v-list-item>
+
+                <v-card-actions>
+                  <v-tooltip bottom>
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-btn outlined icon text v-bind="attrs" v-on="on" class="mr-3" href="https://kamera-pedia.herokuapp.com" target="_blank">
+                        <v-icon>mdi-web</v-icon>
+                      </v-btn>
+                    </template>
+                    <span>Live</span>
                   </v-tooltip>
+
+                  <!-- <v-tooltip bottom>
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-btn href="" target="_blank" icon outlined text v-bind="attrs" v-on="on"
+                        class="mr-3">
+                        <v-icon>mdi-github</v-icon>
+                      </v-btn>
+                    </template>
+                    <span>Github</span>
+                  </v-tooltip> -->
                 </v-card-actions>
               </v-card>
             </v-row>
