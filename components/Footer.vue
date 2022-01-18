@@ -20,7 +20,7 @@
           mdi: 'mdi-github'
         },
         {
-          link: 'https://www.linkedin.com/in/denis-setiawan-391323a8/',
+          link: 'https://www.linkedin.com/in/denis-setiawan/',
           mdi: 'mdi-linkedin'
         },
         {
