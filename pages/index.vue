@@ -18,7 +18,7 @@
             <section class="profile my-10">
               <v-row>
                 <v-col cols="12" sm="9">
-                <div class="text-h3 mx-auto">Deniz Setyawan</div>
+                <div class="text-h4 mx-auto">Deniz Setyawan</div>
                 <p class="text-subtitle-1 ml-2">Developer</p>
                 </v-col>
                 <v-col cols="12" sm="3" class="text-center">
