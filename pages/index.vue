@@ -23,7 +23,7 @@
                 </v-col>
                 <v-col cols="12" sm="3" class="text-center">
                 <v-avatar color="blue-grey lighten-1 mx-auto" size="80">
-                  <img src="https://avatars.githubusercontent.com/u/48708822?v=4" alt="deniz setyawan">
+                  <img src="https://id.gravatar.com/userimage/149369223/b44d80bdbd606747adcb379a0bc2a8cc.png?size=200" alt="deniz setyawan">
                 </v-avatar>
                 </v-col>
               </v-row>
