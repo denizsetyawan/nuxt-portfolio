@@ -32,7 +32,7 @@
             <!-- About -->
             <section class="about mt-6">
               <div class="text-h6">About</div>
-              <p style="text-align: justify; text-indent: 0.5in;">I am a developer and a part time freelancer based in
+              <p style="text-align: justify; text-indent: 0.5in;">I am a software developer and a part time freelancer based in
                 Yogyakarta. beside that i also sell some digital products. I like
                 to learn new things especially about technology.</p>
               <div class="text-center">
