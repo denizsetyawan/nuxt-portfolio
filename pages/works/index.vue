@@ -11,23 +11,21 @@
           <v-sheet class="my-3" rounded="lg">
             <v-row>
 
-              <!-- Eco Greentech Abadi -->
-              <v-card class="mx-auto my-3" max-width="344" shaped>
+              <!-- Works -->
+              <v-card class="mx-auto my-3" max-width="344" shaped v-for="work in works" :key="work.index">
                 <v-list-item three-line>
                   <v-list-item-content>
                     <div class="body-2 mb-3 blue-grey--text lighten-1">
-                      laravel bootstrap datatables
+                      {{ work.tech }}
                     </div>
                     <div class="mb-2">
-                      Eco Greentech Abadi
+                      {{ work.name }}
                     </div>
-                    <div class="caption">it's a company profile website for PT Eco Greentech Abadi, I created it when
-                      I was doing the internship program at PT Eco Greentech Abadi.</div>
+                    <div class="caption">{{ work.desc }}</div>
                   </v-list-item-content>
 
                   <v-avatar tile size="80">
-                    <v-img
-                      src="https://ik.imagekit.io/xdt41sehmiw/dnz_my_id/eco-greentech_zUXvlFfBz.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642204362396">
+                    <v-img :src="work.thumb">
                     </v-img>
                   </v-avatar>
                 </v-list-item>
@@ -35,108 +33,16 @@
                 <v-card-actions>
                   <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
-                      <v-btn outlined icon text v-bind="attrs" v-on="on" class="mr-3" href="https://ecogreentech.herokuapp.com" target="_blank">
+                      <v-btn outlined icon text v-bind="attrs" v-on="on" class="mr-3" :href="work.web" target="_blank">
                         <v-icon>mdi-web</v-icon>
                       </v-btn>
                     </template>
                     <span>Live</span>
                   </v-tooltip>
-
-                  <!-- <v-tooltip bottom>
-                    <template v-slot:activator="{ on, attrs }">
-                      <v-btn outlined icon text v-bind="attrs" v-on="on" class="mr-3">
-                        <v-icon>mdi-github</v-icon>
-                      </v-btn>
-                    </template>
-                    <span>Github</span>
-                  </v-tooltip> -->
+                  <!-- Github / Optional -->
                 </v-card-actions>
               </v-card>
 
-              <!-- Bantenese -->
-              <v-card class="mx-auto my-3" max-width="344" shaped>
-                <v-list-item three-line>
-                  <v-list-item-content>
-                    <div class="body-2 mb-3 blue-grey--text lighten-1">
-                      laravel bootstrap rajaongkir
-                    </div>
-                    <div class="mb-2">
-                      Bantenese Furniture
-                    </div>
-                    <div class="caption">it's an online shop / POS (Point of Sales) website, This project intends to
-                      manage products, categories, and create sales reports.</div>
-                  </v-list-item-content>
-
-                  <v-avatar tile size="80">
-                    <v-img
-                      src="https://ik.imagekit.io/xdt41sehmiw/dnz_my_id/bantenese_jRHAX3uhioh.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642207621647">
-                    </v-img>
-                  </v-avatar>
-                </v-list-item>
-
-                <v-card-actions>
-                  <v-tooltip bottom>
-                    <template v-slot:activator="{ on, attrs }">
-                      <v-btn outlined icon text v-bind="attrs" v-on="on" class="mr-3" href="https://bantenese.herokuapp.com" target="_blank">
-                        <v-icon>mdi-web</v-icon>
-                      </v-btn>
-                    </template>
-                    <span>Live</span>
-                  </v-tooltip>
-
-                  <!-- <v-tooltip bottom>
-                    <template v-slot:activator="{ on, attrs }">
-                      <v-btn href="https://github.com" target="_blank" icon outlined text v-bind="attrs" v-on="on"
-                        class="mr-3">
-                        <v-icon>mdi-github</v-icon>
-                      </v-btn>
-                    </template>
-                    <span>Github</span>
-                  </v-tooltip> -->
-                </v-card-actions>
-              </v-card>
-
-              <!-- Kamerapedia -->
-              <v-card class="mx-auto my-3" max-width="344" shaped>
-                <v-list-item three-line>
-                  <v-list-item-content>
-                    <div class="body-2 mb-3 blue-grey--text lighten-1">
-                      laravel bootstrap
-                    </div>
-                    <div class="mb-2">
-                      Kamerapedia
-                    </div>
-                    <div class="caption">it's a website for camera rental in the yogyakarta area.</div>
-                  </v-list-item-content>
-
-                  <v-avatar tile size="80">
-                    <v-img
-                      src="https://ik.imagekit.io/xdt41sehmiw/dnz_my_id/kamerapedia_boNf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642392702182">
-                    </v-img>
-                  </v-avatar>
-                </v-list-item>
-
-                <v-card-actions>
-                  <v-tooltip bottom>
-                    <template v-slot:activator="{ on, attrs }">
-                      <v-btn outlined icon text v-bind="attrs" v-on="on" class="mr-3" href="https://kamera-pedia.herokuapp.com" target="_blank">
-                        <v-icon>mdi-web</v-icon>
-                      </v-btn>
-                    </template>
-                    <span>Live</span>
-                  </v-tooltip>
-
-                  <!-- <v-tooltip bottom>
-                    <template v-slot:activator="{ on, attrs }">
-                      <v-btn href="" target="_blank" icon outlined text v-bind="attrs" v-on="on"
-                        class="mr-3">
-                        <v-icon>mdi-github</v-icon>
-                      </v-btn>
-                    </template>
-                    <span>Github</span>
-                  </v-tooltip> -->
-                </v-card-actions>
-              </v-card>
             </v-row>
           </v-sheet>
         </v-col>
@@ -151,7 +57,32 @@
 </template>
 <script>
   export default {
-
+    data() {
+      return {
+        works: [{
+            name: 'Eco Greentech Abadi',
+            tech: 'laravel bootstrap datatables',
+            desc: "it's a company profile website for PT Eco Greentech Abadi, I created it when I was doing the internship program at PT Eco Greentech Abadi.",
+            thumb: 'https://ik.imagekit.io/xdt41sehmiw/dnz_my_id/eco-greentech_zUXvlFfBz.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642204362396',
+            web: 'https://ecogreentech.herokuapp.com'
+          },
+          {
+            name: 'Bantenese Furniture',
+            tech: 'laravel bootstrap rajaongkir',
+            desc: "it's an online shop / POS (Point of Sales) website, This project intends to manage products, categories, and create sales reports.",
+            thumb: 'https://ik.imagekit.io/xdt41sehmiw/dnz_my_id/bantenese_jRHAX3uhioh.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642207621647',
+            web: 'https://bantenese.herokuapp.com'
+          },
+          {
+            name: 'Kamerapedia',
+            tech: 'laravel bootstrap',
+            desc: "it's a website for camera rental in the yogyakarta area.",
+            thumb: 'https://ik.imagekit.io/xdt41sehmiw/dnz_my_id/kamerapedia_boNf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642392702182',
+            web: 'https://kamera-pedia.herokuapp.com'
+          }
+        ]
+      }
+    },
   }
 
 </script>
@@ -167,3 +98,15 @@
   }
 
 </style>
+
+<!-- Github / Optional -->
+<!--<template v-if="work.github">
+   <v-tooltip bottom>
+    <template v-slot:activator="{ on, attrs }">
+      <v-btn :href="work.github" target="_blank" icon outlined text v-bind="attrs" v-on="on" class="mr-3">
+        <v-icon>mdi-github</v-icon>
+      </v-btn>
+    </template>
+    <span>Github</span>
+  </v-tooltip> 
+</template> -->
