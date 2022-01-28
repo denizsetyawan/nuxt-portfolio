@@ -11,7 +11,7 @@
           <v-sheet class="my-3" rounded="lg">
             <!-- Hi -->
             <v-alert color="blue-grey lighten-1" border="left" elevation="5" colored-border icon="mdi-hand-wave" shaped>
-              Hello, I'm a developer based in Indonesia!
+              {{ hello.hi }}
             </v-alert>
 
             <!-- Profile -->
@@ -23,8 +23,7 @@
                 </v-col>
                 <v-col cols="12" sm="3" class="text-center">
                   <v-avatar color="blue-grey lighten-1 mx-auto" size="80">
-                    <v-img
-                      :src="prof.avatar">
+                    <v-img :src="prof.avatar">
                     </v-img>
                   </v-avatar>
                 </v-col>
@@ -56,11 +55,13 @@
   export default {
     data() {
       return {
+        hello: {
+          hi: "Hello, I'm a developer based in Indonesia!"
+        },
         section: [{
-            name: 'About',
-            value: "I am a software developer and a part time freelancer based in Yogyakarta. beside that i also sell some digital products. I like to learn new things especially about technology."
-          }
-        ],
+          name: 'About',
+          value: "I am a software developer and a part time freelancer based in Yogyakarta. beside that i also sell some digital products. I like to learn new things especially about technology."
+        }],
         profile: [{
           name: 'Deniz Setyawan',
           work: 'Developer',
