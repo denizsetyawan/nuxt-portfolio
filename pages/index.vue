@@ -15,28 +15,29 @@
             </v-alert>
 
             <!-- Profile -->
-            <section class="profile my-10">
+            <section class="profile my-10" v-for="prof in profile" :key="prof.index">
               <v-row>
                 <v-col cols="12" sm="9">
-                <div class="text-h4 mx-auto">Deniz Setyawan</div>
-                <p class="text-subtitle-1 ml-2">Developer</p>
+                  <div class="text-h4 mx-auto">{{ prof.name }}</div>
+                  <p class="text-subtitle-1 ml-2">{{ prof.work }}</p>
                 </v-col>
                 <v-col cols="12" sm="3" class="text-center">
-                <v-avatar color="blue-grey lighten-1 mx-auto" size="80">
-                  <v-img src="https://id.gravatar.com/userimage/149369223/b44d80bdbd606747adcb379a0bc2a8cc.png?size=200"></v-img>
-                </v-avatar>
+                  <v-avatar color="blue-grey lighten-1 mx-auto" size="80">
+                    <v-img
+                      :src="prof.avatar">
+                    </v-img>
+                  </v-avatar>
                 </v-col>
               </v-row>
             </section>
 
             <!-- About -->
-            <section class="about mt-6">
-              <div class="text-h6">About</div>
-              <p style="text-align: justify; text-indent: 0.5in;">I am a software developer and a part time freelancer based in
-                Yogyakarta. beside that i also sell some digital products. I like
-                to learn new things especially about technology.</p>
+            <section class="about mt-6" v-for="sec in section" :key="sec.index">
+              <div class="text-h6">{{ sec.name }}</div>
+              <p style="text-align: justify; text-indent: 0.5in;">{{ sec.value }}</p>
               <div class="text-center">
-                <v-btn elevation="4" color="blue-grey lighten-1" small justify="center" to="works" nuxt>Portfolio ></v-btn>
+                <v-btn elevation="4" color="blue-grey lighten-1" small justify="center" to="works" nuxt>Portfolio >
+                </v-btn>
               </div>
             </section>
 
@@ -53,7 +54,20 @@
 </template>
 <script>
   export default {
-    
+    data() {
+      return {
+        section: [{
+            name: 'About',
+            value: "I am a software developer and a part time freelancer based in Yogyakarta. beside that i also sell some digital products. I like to learn new things especially about technology."
+          }
+        ],
+        profile: [{
+          name: 'Deniz Setyawan',
+          work: 'Developer',
+          avatar: 'https://id.gravatar.com/userimage/149369223/b44d80bdbd606747adcb379a0bc2a8cc.png?size=200'
+        }]
+      }
+    },
   }
 
 </script>
