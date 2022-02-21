@@ -15,6 +15,7 @@ export default {
       { name: 'keywords', content: 'Portfolio, Website, Web Developer' },
       { name: 'author', content: 'Deniz Setyawan' },
       { name: 'format-detection', content: 'telephone=no' },
+      { name: "google-site-verification", content: "n7IDtG5QlrxeTAwQ-684f_uGJUNoWImfV0G7PVpGQGs" }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
