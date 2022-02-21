@@ -44,6 +44,11 @@ export default {
     '@nuxtjs/sitemap'
   ],
 
+  // Sitemap
+  sitemap: {
+    hostname: 'https://www.dnz.my.id',
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
