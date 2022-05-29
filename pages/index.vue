@@ -40,6 +40,8 @@
               </div>
             </section>
 
+            <!-- Bio -->
+
           </v-sheet>
         </v-col>
 
@@ -61,6 +63,25 @@
         section: [{
           name: 'About',
           value: "I am a software developer and a part time freelancer based in Yogyakarta. beside that i also sell some digital products. I like to learn new things especially about technology."
+        }],
+        bio: [{
+          name: 'Bio',
+          datas: [{
+            name: 'Born in Yogyakarta, Indonesia.',
+            years: 2000,
+          },{
+            name: 'Worked as a freelancer',
+            years: 2020,
+          },{
+            name: "Internship at PT. Eco Greentech Abadi as a Web Developer.",
+            years: 2021,
+          },{
+            name: "Completed my study at Amikom University, 3-year Diploma in Informatics.",
+            years: 2021,
+          },{
+            name: "Working at Jogja Tourism Training Center.",
+            years: "2022 to present",
+          }]
         }],
         profile: [{
           name: 'Deniz Setyawan',
