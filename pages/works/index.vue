@@ -44,6 +44,17 @@
               </v-card>
 
             </v-row>
+
+            <!-- Works 2 -->
+            <section class="bio mt-7 text-center" v-for="bio in bio" :key="bio.index">
+              <div class="text-h6">{{ bio.name }}</div>
+                <div v-for="data in bio.datas" :key="data.index">
+                  <div class="d-inline">{{ data.years }}</div>
+                  <!-- <br> -->
+                  <p>{{ data.name }}</p>
+                </div>
+            </section>
+
           </v-sheet>
         </v-col>
 
@@ -80,7 +91,23 @@
             thumb: 'https://ik.imagekit.io/xdt41sehmiw/dnz_my_id/kamerapedia_boNf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642392702182',
             web: 'http://kamera-pedia.herokuapp.com'
           }
-        ]
+        ],
+        bio: [{
+          name: 'Works',
+          datas: [{
+            name: 'Worked as a freelancer.',
+            years: 2020,
+          },{
+            name: "Internship at PT. Eco Greentech Abadi as a Web Developer.",
+            years: 2021,
+          },{
+            name: "Completed my study at Amikom University, 3-year Diploma in Informatics.",
+            years: 2021,
+          },{
+            name: "Working at Jogja Tourism Training Center.",
+            years: "2022 to present",
+          }]
+        }],
       }
     },
   }
@@ -95,6 +122,13 @@
 
   .v-sheet.theme--dark.rounded-lg {
     background-color: var(--v-background-base, #121212) !important;
+  }
+
+  /* underline di tahun */
+  .d-inline{
+    text-decoration: underline;
+    text-decoration-color: #78909C;
+    text-decoration-thickness: 20%;
   }
 
 </style>
