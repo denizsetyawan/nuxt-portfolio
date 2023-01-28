@@ -75,21 +75,21 @@
             tech: 'laravel bootstrap datatables',
             desc: "it's a company profile website for PT Eco Greentech Abadi, I created it when I was doing the internship program at PT Eco Greentech Abadi.",
             thumb: 'https://ik.imagekit.io/xdt41sehmiw/dnz_my_id/eco-greentech_zUXvlFfBz.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642204362396',
-            web: 'https://ecogreentech.herokuapp.com'
+            web: 'https://ecogreentech.dnz.my.id'
           },
           {
             name: 'Bantenese Furniture',
             tech: 'laravel bootstrap rajaongkir',
             desc: "it's an online shop / POS (Point of Sales) website, This project intends to manage products, categories, and create sales reports.",
             thumb: 'https://ik.imagekit.io/xdt41sehmiw/dnz_my_id/bantenese_jRHAX3uhioh.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642207621647',
-            web: 'http://bantenese.herokuapp.com'
+            web: 'https://bantenese.dnz.my.id'
           },
           {
             name: 'Kamerapedia',
             tech: 'laravel bootstrap',
             desc: "it's a website for camera rental in the yogyakarta area.",
             thumb: 'https://ik.imagekit.io/xdt41sehmiw/dnz_my_id/kamerapedia_boNf.png?ik-sdk-version=javascript-1.4.3&updatedAt=1642392702182',
-            web: 'http://kamera-pedia.herokuapp.com'
+            web: 'https://kamerapedia.dnz.my.id'
           }
         ],
         bio: [{
