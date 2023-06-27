@@ -105,7 +105,10 @@
             years: 2021,
           },{
             name: "Working at Jogja Tourism Training Center.",
-            years: "2022 to present",
+            years: "2022 to 2023",
+          },{
+            name: "Working at PT. CERISE (JogjaBagus).",
+            years: "2023 to present",
           }]
         }],
       }
