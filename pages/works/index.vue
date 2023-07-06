@@ -104,7 +104,7 @@
             name: "Completed my study at Amikom University, 3-year Diploma in Informatics.",
             years: 2021,
           },{
-            name: "Working at Jogja Tourism Training Center.",
+            name: "Worked at Jogja Tourism Training Center.",
             years: "2022 to 2023",
           },{
             name: "Working at PT. CERISE (JogjaBagus).",
